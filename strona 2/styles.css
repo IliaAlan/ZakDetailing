@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Impact', sans-serif;
+}
+
+body {
+    background-color: #FFFFE0;
+    color: #423a2a;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: fantasy;
+    color: #255b5c;
+    font-size: 18px;
+}
+
+.hero {
+    background: #255b5c url('images/car2.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1 {
+    color: #fff;
+    font-size: 62px;
+    text-transform: uppercase;
+    animation: fadeInUp 3.5s ease forwards;
+}
+
+.hero-text p {
+    color: #fff;
+    font-size: 32px;
+    animation: fadeInUp 5s ease forwards;
+}
+
+.animate-text {
+    opacity: 10;
+    font-size: 24px;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 5;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
